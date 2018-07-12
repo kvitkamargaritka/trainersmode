@@ -1,0 +1,38 @@
+.nav
+
+  &__list
+    display: flex
+    flex-direction: row
+    justify-content: center
+    flex-wrap: wrap
+
+  &__link
+    font-size: 15px
+    color: #fff
+    text-transform: uppercase
+    +h600
+
+  &.is-footer
+    .nav
+      &__el
+        position: relative
+        padding: 0 7px
+        &:last-child
+          padding: 0
+
+        &:after
+          position: absolute
+          content: ''
+          right: 0
+          top: 4px
+          background-color: #333333
+          width: 1px
+          height: 13px
+
+      &:last-child
+        &:after
+          display: none
+      &__link
+        font-size: 13px
+        color: #333333
+        text-transform: capitalize

@@ -1,0 +1,124 @@
+//variables
+$textBlack: #4e4e4e
+$linkBlue: #1d7fd5
+
+$btnGreen: #61bc34
+$blue: #4c9ef6
+$borderGrey: #e5e5e5
+$bgGreyLight: #fafbfc
+$bgGreen: #63d12d
+$btnGreenDark: #76c64e
+$bgGrey: #dbdbdb
+$textBlue: #2992e0
+$textBlueLight: #a8d0fe
+
+
+=h300
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-weight: 300
+
+=h400
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-weight: 400
+
+=h600
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-weight: 600
+
+body
+  display: flex
+  flex-direction: column
+  font-size: 13px
+  color: $textBlack
+  +h400
+
+h1
+  font-size: 48px
+  letter-spacing: -.9px
+  +h600
+
+  &.is-fz-30
+    font-size: 30px
+
+h2
+  font-size: 24px
+  letter-spacing: -.5px
+  +h600
+  &.is-fz-22
+    font-size: 22px
+    +h400
+  &.is-fz-18
+    font-size: 22px
+    text-transform: uppercase
+    +h600
+a
+  color: $linkBlue
+  display: inline-block
+  text-decoration: none
+  cursor: pointer
+  transition: all .3s ease-in-out
+
+  //&:hover
+  //  color: $linkBlue
+
+  &:active,
+  &:focus,
+  &:visited
+    text-decoration: none
+
+img
+  display: inline-block
+  max-width: 100%
+  height: auto
+
+input[type='text'],
+input[type='search'],
+input[type='button']
+  border-radius: 0
+  -moz-appearance: none
+  -webkit-appearance: none
+
+// common blocks
+
+.i-ml-21
+  margin-left: 21px
+
+.i-mb-10
+  margin-bottom: 10px
+
+.copyright
+  font-size: 13px
+  color: #333333
+  +h300
+
+.sorter
+  margin-left: 3px
+  position: relative
+  cursor: pointer
+
+.product-info
+  dl
+    padding: 10px 0
+    display: flex
+    flex-direction: row
+    border-bottom: 1px solid #ececec
+
+    &:last-child
+      border-bottom: none
+  dt
+    width: 40%
+    font-size: 13px
+    text-transform: uppercase
+    color: #4e4e4e
+    +h300ls
+
+.description
+  margin-bottom: 20px
+
+  &__el
+    margin-bottom: 20px
+
+  &__name
+    font-size: 13px
+    +h600
+
