@@ -11,21 +11,21 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
 //=include lib/html5shiv.js.js
 $(document).ready(function() {
 
-  // (function RomsMania() {
-  //
-  //   (function menuToggling() {
-  //     $('.js-menu-toggle').click(function(){
-  //       $('.mobile-menu').toggleClass('is-open');
-  //       $('.header__left').toggleClass('is-menu-open');
-  //     });
-  //   }());
-  //
-  //
-  //   (function dropDowns() {
-  //     $('.js-dropdown-more').click(function(){
-  //       $(this).parent().find('.dropdown.is-more ').toggleClass('is-visible');
-  //     });
-  //   }());
-  //
-  // }());
+  (function RomsMania() {
+
+    (function menuToggling() {
+      $('.js-menu-toggle').click(function(){
+        $('.mobile-menu').toggleClass('is-open');
+        $('.header__left').toggleClass('is-menu-open');
+      });
+    }());
+
+
+    (function dropDowns() {
+      $('.js-dropdown-more').click(function(){
+        $(this).parent().find('.dropdown.is-more ').toggleClass('is-visible');
+      });
+    }());
+
+  }());
 });
