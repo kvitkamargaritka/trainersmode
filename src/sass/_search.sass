@@ -16,24 +16,34 @@
       width: 100%
 
   &.is-small
+    position: relative
     width: 0
+    padding: 0 11px
     transition: all .3s ease-in-out
-
-    input
-      padding: 0
+    border-radius: 4px
 
     .ico
+      position: absolute
+      right: 4px
+      top: 50%
+      transform: translateY(-50%)
       transition: all .3s ease-in-out
-      right: -18px
+
+    input
+      width: 0
+      padding: 0
+      transition: all .3s ease-in-out
 
     &:hover
       width: 225px
 
       input
-        padding: 0 33px 0 11px
+        padding-left: 10px
+        padding-right: 33px
+        width: 100%
 
       .ico
-        right: 7px
+        right: 16px
         background-image: url(../img/ico-search-grey.png)
 
     +m(991)
