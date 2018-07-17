@@ -529,7 +529,7 @@ input[type=search] { -webkit-appearance: none; }
 .search.is-small .ico { position: absolute; right: 4px; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 .search.is-small input { width: 0; padding: 0; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 .search.is-small:hover { width: 225px; }
-.search.is-small:hover input { padding-left: 10px; padding-right: 33px; width: 100%; }
+.search.is-small:hover input { padding-left: 10px; padding-right: 29px; width: 100%; }
 .search.is-small:hover .ico { right: 16px; background-image: url(../img/ico-search-grey.png); }
 .search.is-mobile { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 .search.is-mobile .search__action { width: 100%; }
