@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     (function dropDowns() {
       $('.js-dropdown-more').click(function(){
-        $(this).parent().find('.dropdown.is-more ').toggleClass('is-visible');
+        $(this).parent().find('.dropdown ').toggleClass('is-visible');
       });
     }());
 

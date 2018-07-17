@@ -3,7 +3,7 @@
   margin-right: 25px
   cursor: pointer
 
-  +m(767)
+  +m(768)
     display: block
 
   span
@@ -22,13 +22,12 @@
   left: -100%
   width: 265px
   height: 100%
-  background-color: #2a4996
+  background-color: #09579f
   z-index: 50
-  transition: all .3s ease-in-out
+  transition: all .3s ease
 
   &.is-open
     left: 0
-
 
   &__top
     padding: 22px 15px
@@ -41,10 +40,10 @@
 
   &__el
     width: 100%
-    background-color: #548af0
+    background-color: #2281d6
 
     &:nth-child(odd)
-      background-color: #669afa
+      background-color: #3f95e2
 
   &__link
     display: flex
@@ -60,3 +59,6 @@
     &:visited,
     &:focus
       color: #fff
+
+  .search
+    margin-bottom: 10px

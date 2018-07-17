@@ -4,37 +4,26 @@
   vertical-align: middle
   background: top left no-repeat
 
-  &.is-star
-    background-image: url(../img/ico-star.png)
-    width: 12px
-    height: 12px
-
-  &.is-search
-    background-image: url(../img/ico-search.png)
+  &.is-search-small
+    background-image: url(../img/ico-search-small.png)
     width: 14px
     height: 14px
 
-  &.is-search-big
-    background-image: url(../img/ico-search-big-white.png)
+
+  &.is-search-white
+    background-image: url(../img/ico-search-white.png)
     width: 18px
     height: 18px
 
-  &.is-search-big-grey
+  &.is-search-grey
     background-image: url(../img/ico-search-big-grey.png)
     width: 18px
     height: 18px
-
-  &.is-windows
-    background-image: url(../img/ico-windows.svg)
-    background-size: cover
-    width: 14px
-    height: 15px
 
   &.is-sorter-up-down
     width: 11px
     height: 12px
     background-image: url(../img/ico-sorter-up-down.png)
-
 
   &.is-sorter-az
     width: 11px
@@ -55,7 +44,7 @@
       content: ''
       width: 1px
       height: 5px
-      //background-color: $darkGrey
+      background-color: $textBlack
 
     &:after
       left: 0
@@ -67,7 +56,6 @@
       bottom: 0
       transform: rotate(-45deg)
 
-
   &.is-arrow-right
     width: 12px
     height: 8px
@@ -77,7 +65,7 @@
       content: ''
       width: 1px
       height: 5px
-      //background-color: $darkGrey
+      background-color: $textBlack
 
     &:after
       right: 0
@@ -102,7 +90,7 @@
       border-style: solid
       border-width: 4px 4px 0 4px
       border-color: #fff transparent transparent transparent
-      //+tr(all .3s ease)
+      transition: all .3s ease-in-out
 
   &.is-triangle-down-black
     width: 8px
@@ -117,8 +105,7 @@
       border-style: solid
       border-width: 4px 4px 0 4px
       border-color: #000 transparent transparent transparent
-      //+tr(all .3s ease)
-
+      transition: all .3s ease-in-out
 
   &.is-arrow-down
     width: 22px
@@ -160,8 +147,8 @@
 
   &.i-left
     position: absolute
-    top: 9px
-    left: 9px
+    top: 8px
+    left: 8px
 
   &.i-right
     position: absolute

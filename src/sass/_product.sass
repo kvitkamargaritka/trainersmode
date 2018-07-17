@@ -1,56 +1,53 @@
 .product
   margin-top: 30px
-  margin-bottom: 70px
+  margin-bottom: 35px
   display: flex
   flex-direction: row
 
-  +m(991)
-    flex-wrap: wrap
-
-  +m(767)
+  +m(768)
     margin-top: 15px
+    flex-direction: column
 
   &__left
-    margin-right: 30px
-    +m(991)
-      width: 100%
+    margin-right: 60px
+    +m(768)
+      margin-right: 0
       margin-bottom: 30px
 
   &__right
-    +m(991)
+    width: 380px
+    +m(768)
       width: 100%
 
   &__img-box
     width: 260px
-    //+m(991)
-    //  width: auto
+    +m(768)
+      width: auto
 
-  //&__table
-  //  position: relative
-  //  margin-bottom: 14px
-  //  top: -4px
-  //  width: 100%
-  //  line-height: 1.9
-  //  vertical-align: top
-  //  font-size: 13px
-  //
-  //  tr
-  //    border-bottom: 1px solid #ececec
-  //
-  //    &:last-child
-  //      border-bottom: none
-  //
-  //  td
-  //    height: 30px
-  //
-  //    &:first-child
-  //      padding-right: 16px
-  //      text-transform: uppercase
-  //      //color: $lightGrey
-  //      //+h100
-  //
-  //    &:last-child
-  //      //color: $darkGrey
-  //      //+h200
-  //  a
-  //    color: $textBlack
+  &__table
+    position: relative
+    margin-bottom: 30px
+    vertical-align: top
+    font-size: 13px
+
+    tr
+      border-bottom: 1px solid #ececec
+
+      &:last-child
+        border-bottom: none
+
+    td
+      padding: 5px 0
+
+      &:first-child
+        width: 120px
+        text-transform: uppercase
+        +h300
+
+      &:last-child
+        color: #4e4e4e
+
+      a
+        color: #4e4e4e
+        &:hover
+          text-decoration: underline

@@ -6,27 +6,18 @@
   margin: 0
   height: 30px
   line-height: 27px
-  //color: $darkGrey
-  //border: 1px solid $grey
+  color: $textBlack
+  border: 1px solid #dddddd
   border-radius: 4px
   background: transparent
   cursor: pointer
   box-sizing: border-box
-  //+h200
 
-  &:active
-    //color: $darkGrey
-    outline: none
-
-  &:hover
-    //color: $darkGrey
-    outline: none
-
-  &:focus
-    outline: 0
-
+  &:active,
+  &:hover,
+  &:focus,
   &:visited
-    //color: $darkGrey
+    color: $textBlack
     outline: none
 
   &.is-big
@@ -51,7 +42,6 @@
       justify-content: center
       border-radius: 4px
 
-
     &.is-mobile
       padding: 0
       width: 100%
@@ -66,53 +56,55 @@
     border-color: #548af0
     justify-content: center
     font-size: 14px
+    text-transform: capitalize
 
     &:hover
       background-color: darken(#548af0, 20%)
 
   &.is-bold
     color: #fff
-    +h400
+    +h600
 
   &.is-with-ico
+    width: 100%
+    font-size: 22px
     padding: 0
-    display: inline-flex
+    display: flex
     flex-direction: row
     align-items: center
-    font-size: 22px
     text-transform: uppercase
     color: #fff
     border: none
     height: 62px
+    line-height: 62px
+    transition: all .3s ease-in-out
     +h600
 
-    .btn
-
-      &__left,
-      &__right
-        display: inline-flex
-        align-items: center
-        height: 100%
-        transition: all .3s ease-in-out
-
-      &__left
-        width: 62px
-        background-color: #55b800
-        i
-          margin: auto
-      &__right
-        padding: 0 62px
-        background-color: #6aca06
+    +m(480)
+      font-size: 20px
+      height: 50px
+      line-height: 50px
 
     &:hover
+      .btn__text
+        background-color: #81d222
 
-      .btn
+      .btn__icon
+        background-color: #70c700
 
-        &__left
-          background-color: #70c700
+  &__icon
+    position: relative
+    padding: 0 35px
+    background-color: #55b800
+    box-shadow: 10px 0 100px 0 rgba(0, 0, 0, 0.1)
+    +m(480)
+      padding: 0 20px
 
-        &__right
-          background-color: #81d222
+  &__text
+    width: 100%
+    text-align: center
+    color: #fff
+    background-color: #6aca06
 
   &.is-dropdown
     border: none

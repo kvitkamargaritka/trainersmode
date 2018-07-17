@@ -1,6 +1,6 @@
 //=include partials/head.html
 <body>
-  <!--//=include partials/mobile-menu.html-->
+  //=include partials/mobile-menu.html
   //=include partials/header.html
   <main class="main">
     <div class="breadcrumbs">
@@ -36,86 +36,74 @@
               </div><!-- END product__left -->
 
               <div class="product__right">
-                <div class="product-info">
-                  <dl>
-                    <dt>Game name:</dt>
-                    <dd><a href="#">ROGUE TROOPER REDUX: TRAINER +4 V11.09.2017 {MRANTIFUN}</a></dd>
-                  </dl>
-                  <dl>
-                    <dt>User rating:</dt>
-                    <dd><div class="rateit" data-rateit-resetable="false"></div></dd>
-                  </dl>
-                  <dl>
-                    <dt>File size::</dt>
-                    <dd>49,2 MB</dd>
-                  </dl>
-                  <dl>
-                    <dt>Download:</dt>
-                    <dd><321,532</dd>
-                  </dl>
-                  <dl>
-                    <dt>Last updated:</dt>
-                    <dd>2017-Nov-09</dd>
-                  </dl>
-                  <dl>
-                    <dt>System:</dt>
-                    <dd>Windows</dd>
-                  </dl>
-                </div><!-- end product-info -->
-
-                <a href="#" class="btn is-with-ico">
-                  <span class="btn__left">
-                    <i class="ico is-arrow-down"><span class="line"></span></i>
-                  </span>
-                  <span class="btn__right">
-                    Download now
-                  </span>
-                </a>
-
+                <table class="product__table">
+                  <tr>
+                    <td>Game name:</td>
+                    <td><a href="#">ROGUE TROOPER REDUX: TRAINER +4 V11.09.2017 {MRANTIFUN}</a></td>
+                  </tr>
+                  <tr>
+                    <td>User rating:</td>
+                    <td><div class="rateit" data-rateit-resetable="false"></div></td>
+                  </tr>
+                  <tr>
+                    <td>File size:</td>
+                    <td>49,2MB</td>
+                  </tr>
+                  <tr>
+                    <td>Download:</td>
+                    <td>321,532</td>
+                  </tr>
+                  <tr>
+                    <td>Last updated:</td>
+                    <td>2017-Nov-09</td>
+                  </tr>
+                  <tr>
+                    <td>System:</td>
+                    <td>Windows</td>
+                  </tr>
+                </table>
+                <div class="product__download">
+                  <a href="#" class="btn is-with-ico">
+                    <div class="btn__icon">
+                      <i class="ico is-arrow-down"><span class="line"></span></i>
+                    </div>
+                    <div class="btn__text">
+                      <span>Download now</span>
+                    </div>
+                  </a>
+                </div><!-- end product__download -->
                 <div class="more">
                   <span class="btn is-dropdown js-dropdown-more">
                     More Options
                     <i class="ico is-triangle-down-black"></i>
                   </span>
 
-                  <!--<div class="dropdown is-more">-->
-                    <!--<h3 class="more__title">Download & install</h3>-->
-                    <!--<table class="more__table">-->
-                      <!--<tbody>-->
-                        <!--<tr>-->
-                          <!--<td>-->
-                            <!--<a class="more__link" href="#">-->
-                            <!--<span>-->
-                              <!--Download now (fast)-->
-                            <!--</span>-->
-                              <!--<span class="is-fs-12">-->
-                              <!--through Download Manager-->
-                            <!--</span>-->
-                            <!--</a>-->
-                          <!--</td>-->
-                          <!--<td>-->
-                            <!--49.2&nbspMB-->
-                          <!--</td>-->
-                        <!--</tr>-->
-                        <!--<tr>-->
-                          <!--<td>-->
-                            <!--<a class="more__link"  href="#">-->
-                            <!--<span>-->
-                              <!--Browser download (slowest)-->
-                            <!--</span>-->
-                              <!--<span class="is-fs-12">-->
-                              <!--through your browser (slowest)-->
-                            <!--</span>-->
-                            <!--</a>-->
-                          <!--</td>-->
-                          <!--<td>-->
-                            <!--49.2&nbspMB-->
-                          <!--</td>-->
-                        <!--</tr>-->
-                      <!--</tbody>-->
-                    <!--</table>-->
-                    <!--<a class="more__link-blue" href="#">Can't decide?</a>-->
-                  <!--</div>-->
+                  <div class="dropdown">
+                    <h3 class="more__title">Download & install</h3>
+                    <table class="more__table">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <a class="more__link" href="#">
+                              <span class="more__download">Download now (fast)</span>
+                              <span class="more__subscr">through Download Manager</span>
+                            </a>
+                          </td>
+                          <td>49.2 MB</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a class="more__link"  href="#">
+                              <span class="more__download">Browser download (slowest)</span>
+                              <span class="more__subscr">through your browser (slowest)</span>
+                            </a>
+                          </td>
+                          <td>49.2 MB</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <a class="more__link-blue" href="#">Can't decide?</a>
+                  </div>
                 </div><!-- END more -->
 
               </div><!-- END product__right -->
@@ -123,7 +111,7 @@
             </div><!-- END product -->
 
             <div class="description">
-              <h2 class="title is-fz-22">CHEAT DESCRIPTION</h2>
+              <h2 class="title is-fz-22 i-upper">CHEAT DESCRIPTION</h2>
               <div class="description__el">
                 <span class="description__name">Activating this trainer:</span>
                 <p>Press F1 at main menu.</p>
@@ -162,7 +150,7 @@
             </div><!-- end description -->
 
             <div class="preview-gallery">
-              <h2 class="title is-fz-22">Other game trainers</h2>
+              <h2 class="title is-fz-22 i-upper">Other game trainers</h2>
               <ul class="preview-gallery__list">
                 <li class="preview-gallery__el">
                   <a href="#" class="preview-gallery__link">
@@ -309,66 +297,37 @@
                   <img src="img/banner_2.png" alt="banner"/>
                 </a>
               </div>
-              <h2 class="title is-fz-18">Related Trainers</h2>
-              <ul class="list is-small">
+              <h2 class="is-fz-18">Related Trainers</h2>
+              <ul class="list">
                 <li class="list__el">
-                  <a href="#" class="list__link">
-                    5585 - Pokemon - Black Version (USA) (E)
-                  </a>
+                  <a href="#" class="list__link">Rogue Trooper Redux: Save Game (The game..</a>
                 </li>
-
                 <li class="list__el">
-                  <a href="#" class="list__link">
-                    1015 - Pokemon Diamond (U)
-                  </a>
+                  <a href="#" class="list__link">Roguelands: Save Game (Strong Warrior) {Black..</a>
                 </li>
-
                 <li class="list__el">
-                  <a href="#" class="list__link">
-                    4788 - Pokemon - SoulSilver Version (U)
-                  </a>
+                  <a href="#" class="list__link">Rogue Wizards: Trainer +2 v1.2.371 {MrAntiFun}</a>
                 </li>
-
                 <li class="list__el">
-                  <a href="#" class="list__link">
-                    5584 - Pokemon - White Version (USA) (E)
-                  </a>
+                  <a href="#" class="list__link">Rogue Trooper Redux: Trainer +10 GOG R5592.. </a>
                 </li>
-
                 <li class="list__el">
-                  <a href="#" class="list__link">
-                    3541 - Pokemon Platinum Version (US)
-                  </a>
+                  <a href="#" class="list__link">Rogue Trooper Redux: Trainer +4 v11.09.2017..</a>
                 </li>
-
                 <li class="list__el">
-                  <a href="#" class="list__link">
-                    4787 - Pokemon - HeartGold Version (U)
-                  </a>
+                  <a href="#" class="list__link">Rogue Trooper Redux: Trainer (+6) [1.0] {FutureX}</a>
                 </li>
-
                 <li class="list__el">
-                  <a href="#" class="list__link">
-                    6043 - Pokemon - White 2 (Patched-and-EX...
-                  </a>
+                  <a href="#" class="list__link">Rogue Stormers: Trainer +8 BUILD 3274 {Cheat..</a>
                 </li>
-
                 <li class="list__el">
-                  <a href="#" class="list__link">
-                    6042 - Pokemon - Black 2 (Patched-and-EX...
-                  </a>
+                  <a href="#" class="list__link">Streets of Rogue: Trainer +7 (ALPHA 24c) {Cheat..</a>
                 </li>
-
                 <li class="list__el">
-                  <a href="#" class="list__link">
-                    0168 - Mario Kart DS (U)(SCZ)
-                  </a>
+                  <a href="#" class="list__link">Rogue Warrior: Trainer +3 v.01.30.2017 {MrAnti..</a>
                 </li>
-
                 <li class="list__el">
-                  <a href="#" class="list__link">
-                    Pokemon Black White 2 [friends] ROM
-                  </a>
+                  <a href="#" class="list__link">Space Rogue: Trainer +2 V1.45 {MrAntiFun}</a>
                 </li>
               </ul><!-- END list -->
               <div class="banner">

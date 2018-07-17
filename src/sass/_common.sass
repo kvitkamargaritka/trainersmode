@@ -1,17 +1,7 @@
 //variables
 $textBlack: #4e4e4e
 $linkBlue: #1d7fd5
-
-$btnGreen: #61bc34
-$blue: #4c9ef6
 $borderGrey: #e5e5e5
-$bgGreyLight: #fafbfc
-$bgGreen: #63d12d
-$btnGreenDark: #76c64e
-$bgGrey: #dbdbdb
-$textBlue: #2992e0
-$textBlueLight: #a8d0fe
-
 
 =h300
   font-family: 'Open Sans', Helvetica, Arial, sans-serif
@@ -34,21 +24,28 @@ body
 
 h1
   font-size: 48px
-  letter-spacing: -.9px
   +h600
 
   &.is-fz-30
     font-size: 30px
 
+  +m(1024)
+    font-size: 40px
+
+  +m(768)
+    font-size: 23px
+
 h2
   font-size: 24px
   letter-spacing: -.5px
   +h600
+
   &.is-fz-22
     font-size: 22px
     +h400
+
   &.is-fz-18
-    font-size: 22px
+    font-size: 18px
     text-transform: uppercase
     +h600
 a
@@ -57,9 +54,6 @@ a
   text-decoration: none
   cursor: pointer
   transition: all .3s ease-in-out
-
-  //&:hover
-  //  color: $linkBlue
 
   &:active,
   &:focus,
@@ -74,17 +68,13 @@ img
 input[type='text'],
 input[type='search'],
 input[type='button']
-  border-radius: 0
   -moz-appearance: none
   -webkit-appearance: none
 
 // common blocks
 
-.i-ml-21
-  margin-left: 21px
-
-.i-mb-10
-  margin-bottom: 10px
+.i-upper
+  text-transform: uppercase
 
 .copyright
   font-size: 13px
@@ -92,33 +82,32 @@ input[type='button']
   +h300
 
 .sorter
-  margin-left: 3px
+  margin-left: 7px
   position: relative
   cursor: pointer
 
-.product-info
-  dl
-    padding: 10px 0
-    display: flex
-    flex-direction: row
-    border-bottom: 1px solid #ececec
+.logo
+  margin-right: 20px
 
-    &:last-child
-      border-bottom: none
-  dt
-    width: 40%
-    font-size: 13px
-    text-transform: uppercase
-    color: #4e4e4e
-    +h300
+.filter
 
-.description
-  margin-bottom: 20px
+  .search
+    margin-bottom: 10px
 
-  &__el
-    margin-bottom: 20px
+.banner
+  margin: 20px 0
 
   &__name
     font-size: 13px
     +h600
 
+.player
+  margin-top: 20px
+
+.list
+  margin-top: 10px
+  &__link
+    display: block
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis

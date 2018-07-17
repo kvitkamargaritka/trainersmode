@@ -1,25 +1,22 @@
 .table
   width: 100%
   background-color: #fff
-  border: 1px solid #edeff0
+  border: 1px solid #e8ebed
   font-size: 14px
 
   th
     background-color: #edeff0
     text-transform: uppercase
-    padding-left: 13px
-    &:nth-child(2),
-    &:nth-child(3),
-    &:nth-child(4),
-    &:nth-child(5)
-      +m(767)
-        display: none
+    padding-left: 15px
+    +h600
 
-    +h400
-    height: 40px
-    line-height: 40px
     &:first-child
       text-align: left
+
+    +m(768)
+      &:nth-child(2),
+      &:nth-child(3)
+        display: none
 
   tr
     height: 40px
@@ -32,56 +29,20 @@
     text-align: center
     padding: 0
 
-    &:nth-child(2),
-    &:nth-child(3),
-    &:nth-child(4),
-    &:nth-child(5)
-      +m(767)
-        display: none
-
     &:first-child
+      width: 70%
       padding-left: 13px
       text-align: left
 
-  //&.is-small
-  //  width: 267px
-  //  border: none
-  //  font-size: 13px
-  //
-  //  th
-  //    height: auto
-  //    background-color: transparent
-  //    text-align: left
-  //    padding: 0
-  //    line-height: 1.6
-  //    +h300
-  //    &:nth-child(2)
-  //      +m(767)
-  //        display: block
-  //
-  //  tr
-  //    background-color: transparent
-  //    height: auto
-  //    line-height: 1.7
-  //
-  //  td
-  //    text-align: left
-  //    padding: 0
-  //    &:nth-child(2)
-  //      +m(767)
-  //        display: block
-  //
-  //&.is-big
-  //
-  //  th
-  //    &:nth-child(1)
-  //      width: 47%
-  //
-  //    &:nth-child(2)
-  //      width: 16%
-  //
-  //    &:nth-child(3)
-  //      width: 20%
-  //
-  //    &:nth-child(4)
-  //      width: 17%
+    &:nth-child(2),
+    &:nth-child(3)
+      width: 14%
+
+    a
+      &:hover
+        color: #4875e8
+
+    +m(768)
+      &:nth-child(2),
+      &:nth-child(3)
+        display: none

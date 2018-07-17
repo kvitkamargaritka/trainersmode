@@ -1,12 +1,12 @@
 .container
   position: relative
   margin: 0 auto
-  width: 1050px
+  width: 1110px
   +m(1200)
-    width: 970px
+    width: 980px
 
   +m(1024)
-    width: 750px
+    width: 760px
     padding: 0 20px
 
   +m(768)
@@ -14,12 +14,6 @@
 
 .main
   flex: 1 1 auto
-  &.is-error
-    margin-top: 35px
-    padding-top: 70px
-    height: 100%
-    width: 100%
-    background: url('../img/error_bg.png') top
 
 .header
   background-color: #114d8c
@@ -42,6 +36,10 @@
     &.is-menu-open
       left: 250px
 
+  .nav
+    +m(768)
+      display: none
+
 .footer
   padding: 40px 0
   background-color: #eceff1
@@ -52,3 +50,6 @@
     flex-direction: row
     justify-content: space-between
     align-items: center
+
+    +m(768)
+      flex-direction: column
